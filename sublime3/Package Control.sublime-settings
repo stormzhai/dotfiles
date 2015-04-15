@@ -1,0 +1,23 @@
+{
+	"in_process_packages":
+	[
+	],
+	"installed_packages":
+	[
+		"AdvancedNewFile",
+		"BracketHighlighter",
+		"ConvertToUTF8",
+		"DocBlockr",
+		"Emmet",
+		"GoSublime",
+		"JsFormat",
+		"Markdown Preview",
+		"Package Control",
+		"SideBarEnhancements",
+		"SublimeTmpl",
+		"Theme - Soda",
+		"Theme - Spaceblack",
+		"Theme - Spacegray",
+		"TrailingSpaces"
+	]
+}
