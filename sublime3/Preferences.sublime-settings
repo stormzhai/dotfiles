@@ -1,7 +1,13 @@
 {
-	"caret_style": "phase",
-	"color_scheme": "Packages/Theme - Spacegray/base16-ocean.dark.tmTheme",
+        "caret_style": "phase",
+	"color_inactive_tabs": true,
+	"color_scheme": "Packages/Theme - Flatland/Flatland Monokai.tmTheme",
+	"draw_indent_guides": false,
 	"draw_white_space": "all",
+	"env":
+	{
+		"GOPATH": "D:/GoWorkspace/"
+	},
 	"font_face": "YaHei Consolas hybrid",
 	"font_size": 14,
 	"highlight_line": true,
@@ -13,13 +19,18 @@
 	"indent_to_bracket": true,
 	"line_padding_bottom": 1,
 	"line_padding_top": 1,
+	"sidebar_row_padding_medium": true,
+	"sidebar_size_14": true,
 	"soda_folder_icons": true,
+	"status_bar_brighter": true,
 	"tab_size": 4,
-	"theme": "Spacegray Eighties.sublime-theme",
+	"tabs_label_not_italic": true,
+	"tabs_medium": true,
+	"tabs_padding_medium": true,
 	"translate_tabs_to_spaces": true,
+	"trim_trailing_white_space_on_save": true,
 	"update_check": false,
 	"wide_caret": true,
-    "env": {
-           "GOPATH": "d:/Go"
-         }
+	"word_wrap": true,
+	"wrap_width": 140
 }
