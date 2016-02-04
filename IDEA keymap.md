@@ -1,3 +1,4 @@
+##编辑
 ctrl + space 自动完成名称（任意类，方法名，变量名）注意系统输入法切换的快捷键冲突
 ctrl + shift + space  职能代码完成（所期望类型的变量和方法列表供选择）
 ctrl + alt + space  类名自动完成，如果没有import会自动import（project里的任意类名，包括jar包里）
@@ -38,7 +39,7 @@ ctrl +  +/- 展开/折叠代码块
 ctrl + shift + + 展开所有代码
 ctrl + shift + -折叠所有
 ctrl + f4 关闭当前编译tab
-搜索替换
+##搜索替换
 ctrl + f  查找
 f3 查找下一个
 shift + f3 查找上一个
@@ -50,7 +51,7 @@ ctrl + shift + m 替换结构，这里的结构可以是方法，代码模板等
 alt + f7/ ctrl + f7搜索最近使用的地方/在文件中搜索使用的地方
 ctrl + shift + f7高亮显示文件中使用的部分
 ctrl + alt + f7 显示使用地方（可以显示方法、变量等在哪些地方使用）
-编译和执行
+##编译和执行
 ctrl + f9 项目构建（编译修改和相关）
 ctrl + shift + f9 编译选定的文件，包或模块
 alt + shift + f10 选择配置和运行（弹出窗口，选择要运行的项目，运行）
@@ -58,7 +59,7 @@ alt + shift + f9 选择配置和调试（弹出窗口，选择要调试的项目
 shift + f10 运行
 shift + f9 调试
 ctrl + shift + f10 从编译器运行配置的上下文（运行选定的类或当前编译的类）
-调试
+##调试
 f8 跳过
 f7 步入
 shift + f7 智能步入
@@ -68,7 +69,7 @@ alt + f8 计算表达式
 f9 恢复程序运行
 ctrl + f8 切换断点
 ctrl + shift + f8 查看断点
-导航
+##导航
 ctrl + n 打开制定类
 ctrl +　shift + n 打开制定文件
 ctrl + alt + shift + n 前往制定的变量，方法
@@ -101,7 +102,7 @@ ctrl + shift + f11 使用助记符设定/取消书签
 ctrl + #【0-9】跳转指定标号的书签
 shift + f11 查看书签
 
-重构
+##重构
 f5 文件复制
 f6 文件移动
 alt +　delete 安全删除
@@ -114,13 +115,13 @@ ctrl + alt + f 提取实例变量
 ctrl + alt + c 提取常量
 ctrl + alt + p 提取作为方法入参
 
-代码管理
+##代码管理
 ctrl + k 提交项目
 ctrl + t 更新项目
 alt + shift + c 查看最近更改
 alt + backquote 弹出快速做做的窗口
 
-模板
+##模板
 ctrl + alt + j  弹出模板选择窗口
 ctrl +　ｊ　插入动态模板
 iter  循环迭代模板
@@ -129,7 +130,7 @@ itit 迭代器的循环模板
 itli list的循环模板
 psf  静态常量模板
 thr 抛出新异常模板
-
+##general
 alt + #[0-9] 打开响应工具窗口
 ctrl + s 全部保存
 ctrl + alt + y 同步刷新
