@@ -1,0 +1,134 @@
+"语法高亮
+syntax on
+
+"设置取消备份 禁止临时文件生成
+set nobackup
+set noswapfile
+" 为IdeaVim插件增加自动切换为英文输入法的功能,
+" idea 需要安装 IdeaVimExtension plugin
+set keep-english-in-normal
+
+"set laststatus=2   "命令行为两行
+"set fenc=utf-8     "文件编码
+"set mouse=a        "启用鼠标
+"set ignorecase     "忽略大小写
+set cursorline     "突出显示当前行
+"set cursorcolumn   "突出显示当前列
+set fdm=marker
+
+let mapleader = ","   " leader is comma
+let localleader = "," " leader is comma
+
+set tabstop=4       " number of visual spaces per TAB
+set softtabstop=4   " number of spaces in tab when editing
+set shiftwidth=4    " spaces in newline start
+set expandtab       " tabs are spaces      
+set number relativenumber  " show line numbers
+"显示光标所在位置的行号和列号
+set ruler
+set wrap                      "自动折行
+set shiftwidth=4
+set smartindent
+set rnu                 " show relative line numbers
+set showcmd             " show command in bottom bar
+set cursorline          " highlight current line
+set surround            " use surround shortcuts
+set commentary "vim-commentary
+filetype indent on      " load filetype-specific indent files
+set wildmenu            " visual autocomplete for command menu
+set showmatch           " highlight matching [{()}]
+set timeoutlen=500      " timeout for key combinations
+
+set so=5                " lines to cursor
+set backspace=2         " make backspace work like most other apps
+set incsearch           " search as characters are entered
+set hlsearch            " highlight matches
+set ignorecase          " do case insensitive matching
+set smartcase           " do smart case matching
+set hidden
+
+set fillchars+=stl:\ ,stlnc:\
+set laststatus=2
+set clipboard^=unnamed,unnamedplus  "X clipboard as unnamed
+
+"press kj to exit insert mode
+imap kj <Esc>
+vmap kj <Esc>
+" 设置前导键
+let mapleader=","
+" 暂时取消搜索高亮快捷键
+nnoremap <silent> <Leader>l :<C-u>nohlsearch<CR><C-l>
+
+" 移动相关
+" 前一个缓冲区
+nnoremap <silent> [b :w<CR>:bprevious<CR>
+" 后一个缓冲区
+nnoremap <silent> ]b :w<CR>:bnext<CR>
+" 定义快捷键到行首和行尾
+map H ^
+map L $
+" 定义快速跳转
+nmap <Leader>t <C-]>
+" 定义快速跳转回退
+nmap <Leader>T <C-t>
+" 标签页后退 ---标签页前进是gt
+nmap gn gt
+nmap gp gT
+
+" 文件操作相关
+" 定义快捷键关闭当前分割窗口
+nmap <Leader>q :q<CR>
+" 定义快捷键保存当前窗口内容
+nmap <Leader>w :w<CR>
+
+"@see https://youtrack.jetbrains.com/issue/VIM-510 on expand selected region. Press `Ctrl-W` and `Ctrl-Shift-W` to increase and decrease selected region
+
+noremap <Leader>xm :action SearchEverywhere<CR>
+noremap <Leader>ci :action CommentByLineComment<CR>
+noremap <Leader>xs :action SaveAll<CR>
+noremap <Leader>aa :action $Copy<CR>
+noremap <Leader>zz :action $Paste<CR>
+noremap <Leader>yy :action PasteMultiple<CR>
+noremap <Leader>qq :action FindInPath<CR>
+noremap <Leader>ss :action Find<CR>
+noremap <Leader>fp :action CopyPaths<CR>
+noremap <Leader>xk :action CloseEditor<CR>
+noremap <Leader>rr :action RecentFiles<CR>
+noremap <Leader>kk :action GotoFile<CR>
+noremap <Leader>ii :action GotoSymbol<CR>
+noremap <C-]> :action GotoImplementation<CR>
+noremap <Leader>f :action ReformatCode<CR>
+noremap <Leader>xz :action ActivateTerminalToolWindow<CR>
+noremap <Leader>re :action RenameElement<CR>
+noremap <Leader>im :action ImplementMethods<CR>
+noremap <Leader>rv :action IntroduceVariable<CR>
+noremap <Leader>cr :action CopyReference<CR>
+noremap <Leader>em :action ExtractMethod<CR>
+noremap <Leader>sw :action SurroundWith<CR>
+noremap <leader>ga :action GotoAction<CR>
+noremap <leader>gc :action GotoClass<CR>
+noremap <leader>gd :action GotoDeclaration<CR>
+noremap <leader>gi :action GotoImplementation<CR>
+noremap <leader>gs :action GotoSuperMethod<CR>
+noremap <leader>gt :action GotoTest<CR>
+
+" reformat code
+" should be ,x1
+noremap ,xu :action VimWindowOnly<CR>
+" should be ,x3
+noremap ,xh <c-w>s
+" should be ,x2
+noremap ,xv <c-w>v
+" but ,x0 works!
+noremap ,x0 <c-w>c
+" move window
+noremap ,wh <c-w>h
+noremap ,wl <c-w>l
+noremap ,wj <c-w>j
+noremap ,wk <c-w>k%
+
+
+
+" 一些有用的快捷键，但是没做映射
+" open project file tree ---------- alt + 1
+" open terminal window   ---------- alt + F12
