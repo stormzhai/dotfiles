@@ -1,0 +1,4 @@
+FROM openjdk:8-jdk-alpine
+VOLUME /tmp
+ENV BUILD_APP_NAME="cas"     BUILD_TIME="2019-11-01T03:11:12+0000"     BUILD_TIMESTAMP="1572577872"     BUILD_GIT_HASH="5e36be4"     BUILD_GIT_VERSION="dev_03"     BUILD_GIT_ADDRESS=""
+ENTRYPOINT ["java","-Djava.security.egd=file:/dev/./urandom -DBUILD_APP_NAME=${BUILD_APP_NAME} -DBUILD_TIMESTAMP=${BUILD_TIMESTAMP}","-jar","/cas.war"]
